@@ -1,15 +1,18 @@
 #write your code here
-require 'pry'
 
-def countdown intgr
-    i = 0
-    while i < intgr
-        puts "#{intgr - i} SECOND(S)!"
-        i += 1
+def countdown int
+    while int > 0
+        puts "#{int} SECOND(S)!"
+        int -= 1
     end
     "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep intgr 
-    sleep(intgr)
+def countdown_with_sleep int 
+     while int > 0
+        puts "#{int} SECOND(S)!"
+        sleep(1)
+        int -= 1
+    end
+    "HAPPY NEW YEAR!"
 end
